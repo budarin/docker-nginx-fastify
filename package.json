@@ -1,0 +1,15 @@
+{
+  "name": "docker-nginx-fastify",
+  "version": "1.0.0",
+  "main": "app/server.js",
+  "repository": "https://github.com/budarin/docker-nginx-fastify.git",
+  "author": "vadim_budarin <budarin-vv@yandex.ru>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "fastify": "^3.29.0"
+  },
+  "scripts": {
+    "start":"docker-compose up --build"
+  }
+}

@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+    proxy:
+        image: ranadeeppolavarapu/nginx-http3:latest
+        ports:
+            - '8080:80'
+        volumes:
+            - ./nginx.conf:/etc/nginx/nginx.conf
+
+    web_service:
+        image: budarin/fastify_service:0.0.1
+        build:
+            context: .
