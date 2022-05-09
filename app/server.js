@@ -1,11 +1,19 @@
 const fastify = require('fastify')({ logger: true });
 
-fastify.get('/', async (request, reply) => {
-    return { hello: 'world' };
+fastify.route({
+    method: 'GET',
+    url: '/',
+    handler: async () => {
+        return 'hello World';
+    },
 });
 
-fastify.get('/method', async (request, reply) => {
-    return { hello: 'method' };
+fastify.route({
+    method: 'GET',
+    url: '/method',
+    handler: async () => {
+        return 'hello from get /method';
+    },
 });
 
 const start = async () => {
