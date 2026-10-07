@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "fastify": "^5.8.5"
+    "fastify": "^5.12.5"
   },
   "scripts": {
     "start":"docker-compose up --build"
